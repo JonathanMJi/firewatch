@@ -1,7 +1,7 @@
 import streamlit as st
 import pickle
 import numpy as np
-model = pickle.load(open('C:\Jonathan\ML2\Webbapp\model.pkl','rb'))
+model = pickle.load(open('model.pkl','rb'))
 
 def predict_forest(oxygen, humidity, temperature):
     input= np.array([[oxygen, humidity, temperature]]).astype(np.float64)

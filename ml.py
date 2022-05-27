@@ -7,7 +7,7 @@ import warnings
 import pickle
 warnings.filterwarnings("ignore")
 
-data = pd.read_csv("C:\Jonathan\ML2\Webbapp\Fire\Forest_fire.csv")
+data = pd.read_csv("Forest_fire.csv")
 data = np.array(data)
 
 X = data[1:, 1:-1]
